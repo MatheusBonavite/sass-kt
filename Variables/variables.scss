@@ -1,0 +1,24 @@
+$warning-color: #9F6000 !default;
+$warning-border: 1px solid rgb(254, 239, 180) !default;
+$warning-background: rgba(254, 239, 180, 0.55) !default;
+
+$success-color: #4F8A10 !default;
+$success-border: 1px solid rgb(79, 138, 16) !default;
+$success-background: rgba(79, 138, 16, 0.25) !default;
+
+.message{
+  border-radius: 0.25em;
+  border: $success-border;
+  background-color: $success-background;
+  > h3{
+    top: 0;
+    margin: 1em;
+    text-transform: uppercase;
+    font-size: 0.75em;
+    color: $success-color;
+  }
+  p {
+    margin: 1.25em;
+    color: $success-color;
+  }
+}
