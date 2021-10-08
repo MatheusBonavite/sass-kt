@@ -1,0 +1,10 @@
+node_modules/
+.cache/
+dist/
+.env/
+.DS-Store
+.coverage/
+.vscode/
+**/.sass-cache
+**/.sass-cache/*
+.css.map
