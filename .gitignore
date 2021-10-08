@@ -2,9 +2,10 @@ node_modules/
 .cache/
 dist/
 .env/
+.DS_Store
 .DS-Store
 .coverage/
 .vscode/
 **/.sass-cache
 **/.sass-cache/*
-.css.map
+*.css.map
