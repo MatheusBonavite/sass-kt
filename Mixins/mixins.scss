@@ -1,0 +1,27 @@
+@use "sass:map";
+
+@mixin message-border-type($type: "success"){
+  $color: ("warning": #9F6000, "success": #4F8A10);
+  $border: ("warning": 1px solid rgb(254, 239, 180), "success": 1px solid rgb(79, 138, 16));
+  $background-color: ("warning": rgba(254, 239, 180, 0.55), "success": rgba(79, 138, 16, 0.25) );
+
+  color: map.get($color, $type);
+  border: map.get($border, $type);
+  background-color: map.get($background-color, $type);
+}
+
+.message{
+  @include message-border-type("success");
+  border-radius: 0.25em;
+  > h3{
+    top: 0;
+    margin: 1em;
+    text-transform: uppercase;
+    font-size: 0.75em;
+    color: inherit;
+  }
+  p {
+    margin: 1.25em;
+    color: inherit;
+  }
+}
