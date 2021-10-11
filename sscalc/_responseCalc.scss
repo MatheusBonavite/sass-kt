@@ -1,0 +1,16 @@
+@mixin response-calc(){
+    @for $i from 4 through 7{
+        @media(min-width: $i * 100px){
+            font-size: $i * 0.25em;
+            @if($i*100px < 600px){
+                height: 26em;
+            }@else{
+                @if($i == 6){
+                    height: 22em;
+                } @else {
+                    height: 21em;
+                }
+            }
+        }
+    }
+}
