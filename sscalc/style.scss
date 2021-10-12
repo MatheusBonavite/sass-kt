@@ -1,6 +1,7 @@
-@use "_rowFlex";
-@use "_responseKey.scss";
-@use "_responseCalc.scss";
+@use 'globalVariables';
+@use "rowFlex";
+@use "responseKey";
+@use "responseCalc";
 
 @mixin basic-key-style(){
     color: #fff;
@@ -45,10 +46,10 @@ body{
         @include rowFlex.row-flex();
 
         .screen{
+            color: #fff;
             display: flex;
             justify-content: flex-end;
             align-items:  center;
-            color: #fff;
             padding: 1em;
             margin: 0.25em;
             border-radius: 0.5em;
@@ -84,25 +85,19 @@ body{
         @include rowFlex.row-flex();
         justify-content: space-around;
 
-        .key-seven, .key-eight, .key-nine, .operator-div{
-            @include responseKey.responsive-key();
-            @include basic-key-style();
+        @each $key in globalVariables.$keys {
+            .key-#{$key} {
+                @include responseKey.responsive-key();
+                @include basic-key-style();
+            }
         }
 
-        .key-four, .key-five, .key-six, .operator-mult{
-            @include responseKey.responsive-key();
-            @include basic-key-style();
+        @each $operator in globalVariables.$operators{
+            .operator-#{$operator} {
+                @include responseKey.responsive-key();
+                @include basic-key-style();
+            }
         }
 
-        .key-one, .key-two, .key-three, .operator-minus{
-            @include responseKey.responsive-key();
-            @include basic-key-style();
-        }
-
-        .key-zero, .key-dot, .key-equal, .operator-plus{
-            @include responseKey.responsive-key();
-            @include basic-key-style();
-        }
-        
     }
 }
