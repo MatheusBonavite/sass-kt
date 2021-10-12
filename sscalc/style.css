@@ -1,3 +1,26 @@
+#screen-mode {
+  cursor: pointer;
+}
+
+body.dark {
+  background-color: #202328;
+}
+
+.calc.dark {
+  background-color: #dadada;
+}
+.calc.dark .screen.dark {
+  color: #000;
+  background-color: #f5eeee;
+}
+.calc.dark .key-equal.dark, .calc.dark .key-C.dark, .calc.dark .key.dark, .calc.dark .operator.dark {
+  background-color: #2f3332;
+}
+.calc.dark .key-equal.dark:hover, .calc.dark .key-C.dark:hover, .calc.dark .key.dark:hover, .calc.dark .operator.dark:hover {
+  background-color: rgba(245, 238, 238, 0.6);
+  box-shadow: 0px 15px 20px rgba(175, 170, 174, 0.3);
+}
+
 *, :root {
   font-size: 1rem;
   font-family: "Roboto", sans-serif;
@@ -82,14 +105,14 @@ body {
   box-shadow: 0px 15px 20px rgba(228, 19, 158, 0.2);
   transform: translateY(5px);
 }
-.calc .row-2 {
+.calc .regular-row {
   display: flex;
   flex-direction: row;
   align-items: center;
   margin: 0.5em;
   justify-content: space-around;
 }
-.calc .row-2 .key-zero {
+.calc .regular-row .key-zero {
   color: #fff;
   margin: 1em;
   background-color: #3f4557;
@@ -97,48 +120,49 @@ body {
   border-radius: 0.25em;
   width: 100%;
   height: 60%;
+  cursor: pointer;
 }
 @media (min-width: 200px) {
-  .calc .row-2 .key-zero {
+  .calc .regular-row .key-zero {
     padding: 0.5em 0.5em 0.5em 0.5em;
   }
 }
 @media (min-width: 300px) {
-  .calc .row-2 .key-zero {
+  .calc .regular-row .key-zero {
     padding: 0.5em 0.5em 0.5em 0.5em;
   }
 }
 @media (min-width: 500px) {
-  .calc .row-2 .key-zero {
+  .calc .regular-row .key-zero {
     padding: 0.5em 1.5em 1.5em 0.5em;
   }
 }
 @media (min-width: 600px) {
-  .calc .row-2 .key-zero {
+  .calc .regular-row .key-zero {
     padding: 0.5em 1.5em 1.5em 0.5em;
     padding: 0.5em 2.25em 2.25em 0.5em;
   }
 }
 @media (min-width: 700px) {
-  .calc .row-2 .key-zero {
+  .calc .regular-row .key-zero {
     padding: 0.5em 1.5em 1.5em 0.5em;
     padding: 0.5em 2.25em 2.25em 0.5em;
   }
 }
 @media (min-width: 800px) {
-  .calc .row-2 .key-zero {
+  .calc .regular-row .key-zero {
     padding: 0.5em 1.5em 1.5em 0.5em;
     padding: 0.5em 2.25em 2.25em 0.5em;
     padding: 0.5em 3.25em 3.25em 0.5em;
   }
 }
-.calc .row-2 .key-zero:hover {
+.calc .regular-row .key-zero:hover {
   color: #000;
   background-color: rgba(0, 0, 0, 0.1);
   box-shadow: 0px 15px 20px rgba(228, 19, 158, 0.3);
   transform: translateY(5px);
 }
-.calc .row-2 .key-one {
+.calc .regular-row .key-one {
   color: #fff;
   margin: 1em;
   background-color: #3f4557;
@@ -146,48 +170,49 @@ body {
   border-radius: 0.25em;
   width: 100%;
   height: 60%;
+  cursor: pointer;
 }
 @media (min-width: 200px) {
-  .calc .row-2 .key-one {
+  .calc .regular-row .key-one {
     padding: 0.5em 0.5em 0.5em 0.5em;
   }
 }
 @media (min-width: 300px) {
-  .calc .row-2 .key-one {
+  .calc .regular-row .key-one {
     padding: 0.5em 0.5em 0.5em 0.5em;
   }
 }
 @media (min-width: 500px) {
-  .calc .row-2 .key-one {
+  .calc .regular-row .key-one {
     padding: 0.5em 1.5em 1.5em 0.5em;
   }
 }
 @media (min-width: 600px) {
-  .calc .row-2 .key-one {
+  .calc .regular-row .key-one {
     padding: 0.5em 1.5em 1.5em 0.5em;
     padding: 0.5em 2.25em 2.25em 0.5em;
   }
 }
 @media (min-width: 700px) {
-  .calc .row-2 .key-one {
+  .calc .regular-row .key-one {
     padding: 0.5em 1.5em 1.5em 0.5em;
     padding: 0.5em 2.25em 2.25em 0.5em;
   }
 }
 @media (min-width: 800px) {
-  .calc .row-2 .key-one {
+  .calc .regular-row .key-one {
     padding: 0.5em 1.5em 1.5em 0.5em;
     padding: 0.5em 2.25em 2.25em 0.5em;
     padding: 0.5em 3.25em 3.25em 0.5em;
   }
 }
-.calc .row-2 .key-one:hover {
+.calc .regular-row .key-one:hover {
   color: #000;
   background-color: rgba(0, 0, 0, 0.1);
   box-shadow: 0px 15px 20px rgba(228, 19, 158, 0.3);
   transform: translateY(5px);
 }
-.calc .row-2 .key-two {
+.calc .regular-row .key-two {
   color: #fff;
   margin: 1em;
   background-color: #3f4557;
@@ -195,48 +220,49 @@ body {
   border-radius: 0.25em;
   width: 100%;
   height: 60%;
+  cursor: pointer;
 }
 @media (min-width: 200px) {
-  .calc .row-2 .key-two {
+  .calc .regular-row .key-two {
     padding: 0.5em 0.5em 0.5em 0.5em;
   }
 }
 @media (min-width: 300px) {
-  .calc .row-2 .key-two {
+  .calc .regular-row .key-two {
     padding: 0.5em 0.5em 0.5em 0.5em;
   }
 }
 @media (min-width: 500px) {
-  .calc .row-2 .key-two {
+  .calc .regular-row .key-two {
     padding: 0.5em 1.5em 1.5em 0.5em;
   }
 }
 @media (min-width: 600px) {
-  .calc .row-2 .key-two {
+  .calc .regular-row .key-two {
     padding: 0.5em 1.5em 1.5em 0.5em;
     padding: 0.5em 2.25em 2.25em 0.5em;
   }
 }
 @media (min-width: 700px) {
-  .calc .row-2 .key-two {
+  .calc .regular-row .key-two {
     padding: 0.5em 1.5em 1.5em 0.5em;
     padding: 0.5em 2.25em 2.25em 0.5em;
   }
 }
 @media (min-width: 800px) {
-  .calc .row-2 .key-two {
+  .calc .regular-row .key-two {
     padding: 0.5em 1.5em 1.5em 0.5em;
     padding: 0.5em 2.25em 2.25em 0.5em;
     padding: 0.5em 3.25em 3.25em 0.5em;
   }
 }
-.calc .row-2 .key-two:hover {
+.calc .regular-row .key-two:hover {
   color: #000;
   background-color: rgba(0, 0, 0, 0.1);
   box-shadow: 0px 15px 20px rgba(228, 19, 158, 0.3);
   transform: translateY(5px);
 }
-.calc .row-2 .key-three {
+.calc .regular-row .key-three {
   color: #fff;
   margin: 1em;
   background-color: #3f4557;
@@ -244,48 +270,49 @@ body {
   border-radius: 0.25em;
   width: 100%;
   height: 60%;
+  cursor: pointer;
 }
 @media (min-width: 200px) {
-  .calc .row-2 .key-three {
+  .calc .regular-row .key-three {
     padding: 0.5em 0.5em 0.5em 0.5em;
   }
 }
 @media (min-width: 300px) {
-  .calc .row-2 .key-three {
+  .calc .regular-row .key-three {
     padding: 0.5em 0.5em 0.5em 0.5em;
   }
 }
 @media (min-width: 500px) {
-  .calc .row-2 .key-three {
+  .calc .regular-row .key-three {
     padding: 0.5em 1.5em 1.5em 0.5em;
   }
 }
 @media (min-width: 600px) {
-  .calc .row-2 .key-three {
+  .calc .regular-row .key-three {
     padding: 0.5em 1.5em 1.5em 0.5em;
     padding: 0.5em 2.25em 2.25em 0.5em;
   }
 }
 @media (min-width: 700px) {
-  .calc .row-2 .key-three {
+  .calc .regular-row .key-three {
     padding: 0.5em 1.5em 1.5em 0.5em;
     padding: 0.5em 2.25em 2.25em 0.5em;
   }
 }
 @media (min-width: 800px) {
-  .calc .row-2 .key-three {
+  .calc .regular-row .key-three {
     padding: 0.5em 1.5em 1.5em 0.5em;
     padding: 0.5em 2.25em 2.25em 0.5em;
     padding: 0.5em 3.25em 3.25em 0.5em;
   }
 }
-.calc .row-2 .key-three:hover {
+.calc .regular-row .key-three:hover {
   color: #000;
   background-color: rgba(0, 0, 0, 0.1);
   box-shadow: 0px 15px 20px rgba(228, 19, 158, 0.3);
   transform: translateY(5px);
 }
-.calc .row-2 .key-four {
+.calc .regular-row .key-four {
   color: #fff;
   margin: 1em;
   background-color: #3f4557;
@@ -293,48 +320,49 @@ body {
   border-radius: 0.25em;
   width: 100%;
   height: 60%;
+  cursor: pointer;
 }
 @media (min-width: 200px) {
-  .calc .row-2 .key-four {
+  .calc .regular-row .key-four {
     padding: 0.5em 0.5em 0.5em 0.5em;
   }
 }
 @media (min-width: 300px) {
-  .calc .row-2 .key-four {
+  .calc .regular-row .key-four {
     padding: 0.5em 0.5em 0.5em 0.5em;
   }
 }
 @media (min-width: 500px) {
-  .calc .row-2 .key-four {
+  .calc .regular-row .key-four {
     padding: 0.5em 1.5em 1.5em 0.5em;
   }
 }
 @media (min-width: 600px) {
-  .calc .row-2 .key-four {
+  .calc .regular-row .key-four {
     padding: 0.5em 1.5em 1.5em 0.5em;
     padding: 0.5em 2.25em 2.25em 0.5em;
   }
 }
 @media (min-width: 700px) {
-  .calc .row-2 .key-four {
+  .calc .regular-row .key-four {
     padding: 0.5em 1.5em 1.5em 0.5em;
     padding: 0.5em 2.25em 2.25em 0.5em;
   }
 }
 @media (min-width: 800px) {
-  .calc .row-2 .key-four {
+  .calc .regular-row .key-four {
     padding: 0.5em 1.5em 1.5em 0.5em;
     padding: 0.5em 2.25em 2.25em 0.5em;
     padding: 0.5em 3.25em 3.25em 0.5em;
   }
 }
-.calc .row-2 .key-four:hover {
+.calc .regular-row .key-four:hover {
   color: #000;
   background-color: rgba(0, 0, 0, 0.1);
   box-shadow: 0px 15px 20px rgba(228, 19, 158, 0.3);
   transform: translateY(5px);
 }
-.calc .row-2 .key-five {
+.calc .regular-row .key-five {
   color: #fff;
   margin: 1em;
   background-color: #3f4557;
@@ -342,48 +370,49 @@ body {
   border-radius: 0.25em;
   width: 100%;
   height: 60%;
+  cursor: pointer;
 }
 @media (min-width: 200px) {
-  .calc .row-2 .key-five {
+  .calc .regular-row .key-five {
     padding: 0.5em 0.5em 0.5em 0.5em;
   }
 }
 @media (min-width: 300px) {
-  .calc .row-2 .key-five {
+  .calc .regular-row .key-five {
     padding: 0.5em 0.5em 0.5em 0.5em;
   }
 }
 @media (min-width: 500px) {
-  .calc .row-2 .key-five {
+  .calc .regular-row .key-five {
     padding: 0.5em 1.5em 1.5em 0.5em;
   }
 }
 @media (min-width: 600px) {
-  .calc .row-2 .key-five {
+  .calc .regular-row .key-five {
     padding: 0.5em 1.5em 1.5em 0.5em;
     padding: 0.5em 2.25em 2.25em 0.5em;
   }
 }
 @media (min-width: 700px) {
-  .calc .row-2 .key-five {
+  .calc .regular-row .key-five {
     padding: 0.5em 1.5em 1.5em 0.5em;
     padding: 0.5em 2.25em 2.25em 0.5em;
   }
 }
 @media (min-width: 800px) {
-  .calc .row-2 .key-five {
+  .calc .regular-row .key-five {
     padding: 0.5em 1.5em 1.5em 0.5em;
     padding: 0.5em 2.25em 2.25em 0.5em;
     padding: 0.5em 3.25em 3.25em 0.5em;
   }
 }
-.calc .row-2 .key-five:hover {
+.calc .regular-row .key-five:hover {
   color: #000;
   background-color: rgba(0, 0, 0, 0.1);
   box-shadow: 0px 15px 20px rgba(228, 19, 158, 0.3);
   transform: translateY(5px);
 }
-.calc .row-2 .key-six {
+.calc .regular-row .key-six {
   color: #fff;
   margin: 1em;
   background-color: #3f4557;
@@ -391,48 +420,49 @@ body {
   border-radius: 0.25em;
   width: 100%;
   height: 60%;
+  cursor: pointer;
 }
 @media (min-width: 200px) {
-  .calc .row-2 .key-six {
+  .calc .regular-row .key-six {
     padding: 0.5em 0.5em 0.5em 0.5em;
   }
 }
 @media (min-width: 300px) {
-  .calc .row-2 .key-six {
+  .calc .regular-row .key-six {
     padding: 0.5em 0.5em 0.5em 0.5em;
   }
 }
 @media (min-width: 500px) {
-  .calc .row-2 .key-six {
+  .calc .regular-row .key-six {
     padding: 0.5em 1.5em 1.5em 0.5em;
   }
 }
 @media (min-width: 600px) {
-  .calc .row-2 .key-six {
+  .calc .regular-row .key-six {
     padding: 0.5em 1.5em 1.5em 0.5em;
     padding: 0.5em 2.25em 2.25em 0.5em;
   }
 }
 @media (min-width: 700px) {
-  .calc .row-2 .key-six {
+  .calc .regular-row .key-six {
     padding: 0.5em 1.5em 1.5em 0.5em;
     padding: 0.5em 2.25em 2.25em 0.5em;
   }
 }
 @media (min-width: 800px) {
-  .calc .row-2 .key-six {
+  .calc .regular-row .key-six {
     padding: 0.5em 1.5em 1.5em 0.5em;
     padding: 0.5em 2.25em 2.25em 0.5em;
     padding: 0.5em 3.25em 3.25em 0.5em;
   }
 }
-.calc .row-2 .key-six:hover {
+.calc .regular-row .key-six:hover {
   color: #000;
   background-color: rgba(0, 0, 0, 0.1);
   box-shadow: 0px 15px 20px rgba(228, 19, 158, 0.3);
   transform: translateY(5px);
 }
-.calc .row-2 .key-seven {
+.calc .regular-row .key-seven {
   color: #fff;
   margin: 1em;
   background-color: #3f4557;
@@ -440,48 +470,49 @@ body {
   border-radius: 0.25em;
   width: 100%;
   height: 60%;
+  cursor: pointer;
 }
 @media (min-width: 200px) {
-  .calc .row-2 .key-seven {
+  .calc .regular-row .key-seven {
     padding: 0.5em 0.5em 0.5em 0.5em;
   }
 }
 @media (min-width: 300px) {
-  .calc .row-2 .key-seven {
+  .calc .regular-row .key-seven {
     padding: 0.5em 0.5em 0.5em 0.5em;
   }
 }
 @media (min-width: 500px) {
-  .calc .row-2 .key-seven {
+  .calc .regular-row .key-seven {
     padding: 0.5em 1.5em 1.5em 0.5em;
   }
 }
 @media (min-width: 600px) {
-  .calc .row-2 .key-seven {
+  .calc .regular-row .key-seven {
     padding: 0.5em 1.5em 1.5em 0.5em;
     padding: 0.5em 2.25em 2.25em 0.5em;
   }
 }
 @media (min-width: 700px) {
-  .calc .row-2 .key-seven {
+  .calc .regular-row .key-seven {
     padding: 0.5em 1.5em 1.5em 0.5em;
     padding: 0.5em 2.25em 2.25em 0.5em;
   }
 }
 @media (min-width: 800px) {
-  .calc .row-2 .key-seven {
+  .calc .regular-row .key-seven {
     padding: 0.5em 1.5em 1.5em 0.5em;
     padding: 0.5em 2.25em 2.25em 0.5em;
     padding: 0.5em 3.25em 3.25em 0.5em;
   }
 }
-.calc .row-2 .key-seven:hover {
+.calc .regular-row .key-seven:hover {
   color: #000;
   background-color: rgba(0, 0, 0, 0.1);
   box-shadow: 0px 15px 20px rgba(228, 19, 158, 0.3);
   transform: translateY(5px);
 }
-.calc .row-2 .key-eight {
+.calc .regular-row .key-eight {
   color: #fff;
   margin: 1em;
   background-color: #3f4557;
@@ -489,48 +520,49 @@ body {
   border-radius: 0.25em;
   width: 100%;
   height: 60%;
+  cursor: pointer;
 }
 @media (min-width: 200px) {
-  .calc .row-2 .key-eight {
+  .calc .regular-row .key-eight {
     padding: 0.5em 0.5em 0.5em 0.5em;
   }
 }
 @media (min-width: 300px) {
-  .calc .row-2 .key-eight {
+  .calc .regular-row .key-eight {
     padding: 0.5em 0.5em 0.5em 0.5em;
   }
 }
 @media (min-width: 500px) {
-  .calc .row-2 .key-eight {
+  .calc .regular-row .key-eight {
     padding: 0.5em 1.5em 1.5em 0.5em;
   }
 }
 @media (min-width: 600px) {
-  .calc .row-2 .key-eight {
+  .calc .regular-row .key-eight {
     padding: 0.5em 1.5em 1.5em 0.5em;
     padding: 0.5em 2.25em 2.25em 0.5em;
   }
 }
 @media (min-width: 700px) {
-  .calc .row-2 .key-eight {
+  .calc .regular-row .key-eight {
     padding: 0.5em 1.5em 1.5em 0.5em;
     padding: 0.5em 2.25em 2.25em 0.5em;
   }
 }
 @media (min-width: 800px) {
-  .calc .row-2 .key-eight {
+  .calc .regular-row .key-eight {
     padding: 0.5em 1.5em 1.5em 0.5em;
     padding: 0.5em 2.25em 2.25em 0.5em;
     padding: 0.5em 3.25em 3.25em 0.5em;
   }
 }
-.calc .row-2 .key-eight:hover {
+.calc .regular-row .key-eight:hover {
   color: #000;
   background-color: rgba(0, 0, 0, 0.1);
   box-shadow: 0px 15px 20px rgba(228, 19, 158, 0.3);
   transform: translateY(5px);
 }
-.calc .row-2 .key-nine {
+.calc .regular-row .key-nine {
   color: #fff;
   margin: 1em;
   background-color: #3f4557;
@@ -538,48 +570,49 @@ body {
   border-radius: 0.25em;
   width: 100%;
   height: 60%;
+  cursor: pointer;
 }
 @media (min-width: 200px) {
-  .calc .row-2 .key-nine {
+  .calc .regular-row .key-nine {
     padding: 0.5em 0.5em 0.5em 0.5em;
   }
 }
 @media (min-width: 300px) {
-  .calc .row-2 .key-nine {
+  .calc .regular-row .key-nine {
     padding: 0.5em 0.5em 0.5em 0.5em;
   }
 }
 @media (min-width: 500px) {
-  .calc .row-2 .key-nine {
+  .calc .regular-row .key-nine {
     padding: 0.5em 1.5em 1.5em 0.5em;
   }
 }
 @media (min-width: 600px) {
-  .calc .row-2 .key-nine {
+  .calc .regular-row .key-nine {
     padding: 0.5em 1.5em 1.5em 0.5em;
     padding: 0.5em 2.25em 2.25em 0.5em;
   }
 }
 @media (min-width: 700px) {
-  .calc .row-2 .key-nine {
+  .calc .regular-row .key-nine {
     padding: 0.5em 1.5em 1.5em 0.5em;
     padding: 0.5em 2.25em 2.25em 0.5em;
   }
 }
 @media (min-width: 800px) {
-  .calc .row-2 .key-nine {
+  .calc .regular-row .key-nine {
     padding: 0.5em 1.5em 1.5em 0.5em;
     padding: 0.5em 2.25em 2.25em 0.5em;
     padding: 0.5em 3.25em 3.25em 0.5em;
   }
 }
-.calc .row-2 .key-nine:hover {
+.calc .regular-row .key-nine:hover {
   color: #000;
   background-color: rgba(0, 0, 0, 0.1);
   box-shadow: 0px 15px 20px rgba(228, 19, 158, 0.3);
   transform: translateY(5px);
 }
-.calc .row-2 .key-dot {
+.calc .regular-row .key-dot {
   color: #fff;
   margin: 1em;
   background-color: #3f4557;
@@ -587,48 +620,49 @@ body {
   border-radius: 0.25em;
   width: 100%;
   height: 60%;
+  cursor: pointer;
 }
 @media (min-width: 200px) {
-  .calc .row-2 .key-dot {
+  .calc .regular-row .key-dot {
     padding: 0.5em 0.5em 0.5em 0.5em;
   }
 }
 @media (min-width: 300px) {
-  .calc .row-2 .key-dot {
+  .calc .regular-row .key-dot {
     padding: 0.5em 0.5em 0.5em 0.5em;
   }
 }
 @media (min-width: 500px) {
-  .calc .row-2 .key-dot {
+  .calc .regular-row .key-dot {
     padding: 0.5em 1.5em 1.5em 0.5em;
   }
 }
 @media (min-width: 600px) {
-  .calc .row-2 .key-dot {
+  .calc .regular-row .key-dot {
     padding: 0.5em 1.5em 1.5em 0.5em;
     padding: 0.5em 2.25em 2.25em 0.5em;
   }
 }
 @media (min-width: 700px) {
-  .calc .row-2 .key-dot {
+  .calc .regular-row .key-dot {
     padding: 0.5em 1.5em 1.5em 0.5em;
     padding: 0.5em 2.25em 2.25em 0.5em;
   }
 }
 @media (min-width: 800px) {
-  .calc .row-2 .key-dot {
+  .calc .regular-row .key-dot {
     padding: 0.5em 1.5em 1.5em 0.5em;
     padding: 0.5em 2.25em 2.25em 0.5em;
     padding: 0.5em 3.25em 3.25em 0.5em;
   }
 }
-.calc .row-2 .key-dot:hover {
+.calc .regular-row .key-dot:hover {
   color: #000;
   background-color: rgba(0, 0, 0, 0.1);
   box-shadow: 0px 15px 20px rgba(228, 19, 158, 0.3);
   transform: translateY(5px);
 }
-.calc .row-2 .key-equal {
+.calc .regular-row .key-equal {
   color: #fff;
   margin: 1em;
   background-color: #3f4557;
@@ -636,48 +670,49 @@ body {
   border-radius: 0.25em;
   width: 100%;
   height: 60%;
+  cursor: pointer;
 }
 @media (min-width: 200px) {
-  .calc .row-2 .key-equal {
+  .calc .regular-row .key-equal {
     padding: 0.5em 0.5em 0.5em 0.5em;
   }
 }
 @media (min-width: 300px) {
-  .calc .row-2 .key-equal {
+  .calc .regular-row .key-equal {
     padding: 0.5em 0.5em 0.5em 0.5em;
   }
 }
 @media (min-width: 500px) {
-  .calc .row-2 .key-equal {
+  .calc .regular-row .key-equal {
     padding: 0.5em 1.5em 1.5em 0.5em;
   }
 }
 @media (min-width: 600px) {
-  .calc .row-2 .key-equal {
+  .calc .regular-row .key-equal {
     padding: 0.5em 1.5em 1.5em 0.5em;
     padding: 0.5em 2.25em 2.25em 0.5em;
   }
 }
 @media (min-width: 700px) {
-  .calc .row-2 .key-equal {
+  .calc .regular-row .key-equal {
     padding: 0.5em 1.5em 1.5em 0.5em;
     padding: 0.5em 2.25em 2.25em 0.5em;
   }
 }
 @media (min-width: 800px) {
-  .calc .row-2 .key-equal {
+  .calc .regular-row .key-equal {
     padding: 0.5em 1.5em 1.5em 0.5em;
     padding: 0.5em 2.25em 2.25em 0.5em;
     padding: 0.5em 3.25em 3.25em 0.5em;
   }
 }
-.calc .row-2 .key-equal:hover {
+.calc .regular-row .key-equal:hover {
   color: #000;
   background-color: rgba(0, 0, 0, 0.1);
   box-shadow: 0px 15px 20px rgba(228, 19, 158, 0.3);
   transform: translateY(5px);
 }
-.calc .row-2 .operator-div {
+.calc .regular-row .operator-div {
   color: #fff;
   margin: 1em;
   background-color: #3f4557;
@@ -685,48 +720,49 @@ body {
   border-radius: 0.25em;
   width: 100%;
   height: 60%;
+  cursor: pointer;
 }
 @media (min-width: 200px) {
-  .calc .row-2 .operator-div {
+  .calc .regular-row .operator-div {
     padding: 0.5em 0.5em 0.5em 0.5em;
   }
 }
 @media (min-width: 300px) {
-  .calc .row-2 .operator-div {
+  .calc .regular-row .operator-div {
     padding: 0.5em 0.5em 0.5em 0.5em;
   }
 }
 @media (min-width: 500px) {
-  .calc .row-2 .operator-div {
+  .calc .regular-row .operator-div {
     padding: 0.5em 1.5em 1.5em 0.5em;
   }
 }
 @media (min-width: 600px) {
-  .calc .row-2 .operator-div {
+  .calc .regular-row .operator-div {
     padding: 0.5em 1.5em 1.5em 0.5em;
     padding: 0.5em 2.25em 2.25em 0.5em;
   }
 }
 @media (min-width: 700px) {
-  .calc .row-2 .operator-div {
+  .calc .regular-row .operator-div {
     padding: 0.5em 1.5em 1.5em 0.5em;
     padding: 0.5em 2.25em 2.25em 0.5em;
   }
 }
 @media (min-width: 800px) {
-  .calc .row-2 .operator-div {
+  .calc .regular-row .operator-div {
     padding: 0.5em 1.5em 1.5em 0.5em;
     padding: 0.5em 2.25em 2.25em 0.5em;
     padding: 0.5em 3.25em 3.25em 0.5em;
   }
 }
-.calc .row-2 .operator-div:hover {
+.calc .regular-row .operator-div:hover {
   color: #000;
   background-color: rgba(0, 0, 0, 0.1);
   box-shadow: 0px 15px 20px rgba(228, 19, 158, 0.3);
   transform: translateY(5px);
 }
-.calc .row-2 .operator-mult {
+.calc .regular-row .operator-mult {
   color: #fff;
   margin: 1em;
   background-color: #3f4557;
@@ -734,48 +770,49 @@ body {
   border-radius: 0.25em;
   width: 100%;
   height: 60%;
+  cursor: pointer;
 }
 @media (min-width: 200px) {
-  .calc .row-2 .operator-mult {
+  .calc .regular-row .operator-mult {
     padding: 0.5em 0.5em 0.5em 0.5em;
   }
 }
 @media (min-width: 300px) {
-  .calc .row-2 .operator-mult {
+  .calc .regular-row .operator-mult {
     padding: 0.5em 0.5em 0.5em 0.5em;
   }
 }
 @media (min-width: 500px) {
-  .calc .row-2 .operator-mult {
+  .calc .regular-row .operator-mult {
     padding: 0.5em 1.5em 1.5em 0.5em;
   }
 }
 @media (min-width: 600px) {
-  .calc .row-2 .operator-mult {
+  .calc .regular-row .operator-mult {
     padding: 0.5em 1.5em 1.5em 0.5em;
     padding: 0.5em 2.25em 2.25em 0.5em;
   }
 }
 @media (min-width: 700px) {
-  .calc .row-2 .operator-mult {
+  .calc .regular-row .operator-mult {
     padding: 0.5em 1.5em 1.5em 0.5em;
     padding: 0.5em 2.25em 2.25em 0.5em;
   }
 }
 @media (min-width: 800px) {
-  .calc .row-2 .operator-mult {
+  .calc .regular-row .operator-mult {
     padding: 0.5em 1.5em 1.5em 0.5em;
     padding: 0.5em 2.25em 2.25em 0.5em;
     padding: 0.5em 3.25em 3.25em 0.5em;
   }
 }
-.calc .row-2 .operator-mult:hover {
+.calc .regular-row .operator-mult:hover {
   color: #000;
   background-color: rgba(0, 0, 0, 0.1);
   box-shadow: 0px 15px 20px rgba(228, 19, 158, 0.3);
   transform: translateY(5px);
 }
-.calc .row-2 .operator-minus {
+.calc .regular-row .operator-minus {
   color: #fff;
   margin: 1em;
   background-color: #3f4557;
@@ -783,48 +820,49 @@ body {
   border-radius: 0.25em;
   width: 100%;
   height: 60%;
+  cursor: pointer;
 }
 @media (min-width: 200px) {
-  .calc .row-2 .operator-minus {
+  .calc .regular-row .operator-minus {
     padding: 0.5em 0.5em 0.5em 0.5em;
   }
 }
 @media (min-width: 300px) {
-  .calc .row-2 .operator-minus {
+  .calc .regular-row .operator-minus {
     padding: 0.5em 0.5em 0.5em 0.5em;
   }
 }
 @media (min-width: 500px) {
-  .calc .row-2 .operator-minus {
+  .calc .regular-row .operator-minus {
     padding: 0.5em 1.5em 1.5em 0.5em;
   }
 }
 @media (min-width: 600px) {
-  .calc .row-2 .operator-minus {
+  .calc .regular-row .operator-minus {
     padding: 0.5em 1.5em 1.5em 0.5em;
     padding: 0.5em 2.25em 2.25em 0.5em;
   }
 }
 @media (min-width: 700px) {
-  .calc .row-2 .operator-minus {
+  .calc .regular-row .operator-minus {
     padding: 0.5em 1.5em 1.5em 0.5em;
     padding: 0.5em 2.25em 2.25em 0.5em;
   }
 }
 @media (min-width: 800px) {
-  .calc .row-2 .operator-minus {
+  .calc .regular-row .operator-minus {
     padding: 0.5em 1.5em 1.5em 0.5em;
     padding: 0.5em 2.25em 2.25em 0.5em;
     padding: 0.5em 3.25em 3.25em 0.5em;
   }
 }
-.calc .row-2 .operator-minus:hover {
+.calc .regular-row .operator-minus:hover {
   color: #000;
   background-color: rgba(0, 0, 0, 0.1);
   box-shadow: 0px 15px 20px rgba(228, 19, 158, 0.3);
   transform: translateY(5px);
 }
-.calc .row-2 .operator-plus {
+.calc .regular-row .operator-plus {
   color: #fff;
   margin: 1em;
   background-color: #3f4557;
@@ -832,42 +870,43 @@ body {
   border-radius: 0.25em;
   width: 100%;
   height: 60%;
+  cursor: pointer;
 }
 @media (min-width: 200px) {
-  .calc .row-2 .operator-plus {
+  .calc .regular-row .operator-plus {
     padding: 0.5em 0.5em 0.5em 0.5em;
   }
 }
 @media (min-width: 300px) {
-  .calc .row-2 .operator-plus {
+  .calc .regular-row .operator-plus {
     padding: 0.5em 0.5em 0.5em 0.5em;
   }
 }
 @media (min-width: 500px) {
-  .calc .row-2 .operator-plus {
+  .calc .regular-row .operator-plus {
     padding: 0.5em 1.5em 1.5em 0.5em;
   }
 }
 @media (min-width: 600px) {
-  .calc .row-2 .operator-plus {
+  .calc .regular-row .operator-plus {
     padding: 0.5em 1.5em 1.5em 0.5em;
     padding: 0.5em 2.25em 2.25em 0.5em;
   }
 }
 @media (min-width: 700px) {
-  .calc .row-2 .operator-plus {
+  .calc .regular-row .operator-plus {
     padding: 0.5em 1.5em 1.5em 0.5em;
     padding: 0.5em 2.25em 2.25em 0.5em;
   }
 }
 @media (min-width: 800px) {
-  .calc .row-2 .operator-plus {
+  .calc .regular-row .operator-plus {
     padding: 0.5em 1.5em 1.5em 0.5em;
     padding: 0.5em 2.25em 2.25em 0.5em;
     padding: 0.5em 3.25em 3.25em 0.5em;
   }
 }
-.calc .row-2 .operator-plus:hover {
+.calc .regular-row .operator-plus:hover {
   color: #000;
   background-color: rgba(0, 0, 0, 0.1);
   box-shadow: 0px 15px 20px rgba(228, 19, 158, 0.3);

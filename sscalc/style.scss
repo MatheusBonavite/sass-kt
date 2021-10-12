@@ -2,6 +2,7 @@
 @use "rowFlex";
 @use "responseKey";
 @use "responseCalc";
+@use "darkMode";
 
 @mixin basic-key-style(){
     color: #fff;
@@ -17,6 +18,7 @@
     }
     width: 100%;
     height: 60%;
+    cursor: pointer;
 }
 
 *, :root{
@@ -81,7 +83,7 @@ body{
         }
     }
 
-    .row-2{
+    .regular-row{
         @include rowFlex.row-flex();
         justify-content: space-around;
 

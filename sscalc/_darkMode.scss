@@ -1,0 +1,23 @@
+#screen-mode{
+    cursor: pointer;
+}
+
+body.dark{
+    background-color: #202328;
+}
+
+.calc.dark{
+    background-color: #dadada;
+    .screen.dark{
+        color: #000;
+        background-color: rgb(245, 238, 238);
+    }
+    
+    .key-equal.dark, .key-C.dark, .key.dark, .operator.dark{
+        background-color: #2f3332;
+        &:hover{
+            background-color: rgba(245, 238, 238, 0.6);
+            box-shadow: 0px 15px 20px rgba(175, 170, 174, 0.3);
+        }
+    }
+}
