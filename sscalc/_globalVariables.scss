@@ -19,3 +19,11 @@ $operators: (
     'minus',
     'plus'
 );
+
+$body-background : ('default': #97d9e1, 'dark': #202328);
+$key-background : ('default': #3f4557, 'dark': #2f3332);
+$screen-background: ('default': #f484a2, 'dark': rgb(245, 238, 238));
+$screen-color: ('default': #fff, 'dark': #000);
+$calc-background: ('default': #fff, 'dark': #dadada);
+$key-hover-background: ('default': rgba(0, 0, 0, 0.1), 'dark': rgba(245, 238, 238, 0.6));
+$key-hover-boxshadow: ('default': 0px 15px 20px rgba(228, 19, 158, 0.3), 'dark': 0px 15px 20px rgba(175, 170, 174, 0.3));
