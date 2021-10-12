@@ -1,0 +1,21 @@
+@mixin responsive-key(){
+    @for $i from 2 through 8{
+        @media(min-width: $i * 100px){
+            @if($i*100px <= 300px){
+                padding: 0.5em 0.5em 0.5em 0.5em;
+            }
+
+            @if($i*100px >= 500px) {
+                padding: 0.5em 1.5em 1.5em 0.5em;
+            }
+
+            @if($i*100px >= 600px) {
+                padding: 0.5em 2.25em 2.25em 0.5em;
+            }
+
+            @if($i*100px >= 800px) {
+                padding: 0.5em 3.25em 3.25em 0.5em;
+            }
+        }
+    }
+}
